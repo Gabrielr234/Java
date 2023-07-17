@@ -1,0 +1,23 @@
+package teste;
+
+import java.util.Scanner;
+
+public class daooe {
+
+	public static void main(String[] args) {
+
+		System.out.println("Digite um número:");
+        String nome = scanner.next();
+
+        System.out.println("Digite a idade:");
+        int x = scanner.nextInt();
+
+        System.out.println("Digite a cidade:");
+        String cidade = scanner.next();
+        
+        System.out.printf("%s, morador de %s com idade de %d", nome, cidade, x);
+		
+        scanner.close();
+       
+	}
+}

@@ -1,0 +1,26 @@
+package Entrada_de_dados;
+
+import java.util.Scanner;
+
+public class Questãob2 {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		int x, y, soma;
+
+		System.out.println("digite um número:");
+		x = scanner.nextInt();
+
+		System.out.println("Digite outro número:");
+
+		y = scanner.nextInt();
+
+		soma = x + y;
+
+		System.out.printf("O valor da soma %d com %d é:%d ", x, y, soma);
+
+		scanner.close();
+	}
+}

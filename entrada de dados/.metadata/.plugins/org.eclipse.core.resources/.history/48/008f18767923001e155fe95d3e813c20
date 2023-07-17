@@ -1,0 +1,19 @@
+package teste;
+
+import java.util.Scanner;
+
+public class daooe {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite um numero:");
+
+		Double x = scanner.nextDouble();
+		
+		System.out.printf("O numero digitado foi %.5fn: ", x);
+		
+		scanner.close();
+	}
+}

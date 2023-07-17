@@ -1,0 +1,26 @@
+package Entrada_de_dados;
+
+import java.util.Scanner;
+
+import java.util.Locale;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+		Scanner scanner = new Scanner(System.in);
+
+		double R, A, pi = 3.14159;
+
+		R = scanner.nextDouble();
+
+		A = pi * R * R;
+
+		System.out.printf("A=%.4f%n", A);
+
+		scanner.close();
+	}
+
+}

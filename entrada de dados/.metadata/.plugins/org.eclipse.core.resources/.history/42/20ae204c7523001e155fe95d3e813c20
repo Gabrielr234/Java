@@ -1,0 +1,21 @@
+package teste;
+
+import java.util.Scanner;
+
+public class daooe {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite um numero:");
+
+		string nome = scanner.next();
+		
+		System.out.println("O numero digitado foi : " + nome);
+
+		scanner.close();
+
+	}
+
+}

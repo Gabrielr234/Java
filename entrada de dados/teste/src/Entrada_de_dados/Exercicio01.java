@@ -1,0 +1,30 @@
+package Entrada_de_dados;
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+
+		System.out.println("Exercicio1");
+
+		int x, y, soma;
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite um número:");
+
+		y = scanner.nextInt();
+
+		System.out.println("digite outro numero:");
+
+		x = scanner.nextInt();
+
+		soma = x + y;
+
+		System.out.printf("A soma de %d + %d fica:%d ", y, x, soma);
+		
+		scanner.close();
+	}
+
+}

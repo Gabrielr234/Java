@@ -1,0 +1,23 @@
+package teste;
+
+import java.util.Scanner;
+
+import java.util.Locale;
+
+public class daooe {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite um numero:");
+
+		Double x = scanner.nextDouble();
+
+		Locale locale = Locale.US;
+		
+		System.out.println("O numero digitado foi %.5f: " + x);
+		
+		scanner.close();
+	}
+}
