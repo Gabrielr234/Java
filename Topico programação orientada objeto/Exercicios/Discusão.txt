@@ -1,0 +1,61 @@
+Discusão 
+
+Com o uso de CLASSE, agora nós temos uma váriavel composta do tipo "Triangle" para representar cada triângulo
+
+Triangle x,y;
+
+x = new triangle();
+
+y = new triangle();
+
+Melhorar a classe com um método para cálcular a área
+
+
+
+Exercicio 2:
+
+Fazer um programa para ler os dados de um produto em estoque (nome,preço e quantidade no estoque). Em seguida:
+
+Mostrar os dados do produto (nome,preço, quantidade no estoque, valor total no estoque)
+
+Realizar uma entrada no estoque e mostrar novamente os dados do produto
+
+Realizar uma saída no estoque e mostrar novamente os dados do produto 
+
+
+Para resolver este problema, você deve criar 
+
+Uma Classe conforme projeto ao lado:
+
+
+Product 
+
+Name: String
+Price: Double 
+Quantity: int 
+
+TotalvalueinStock () double 
+addProducts (quantity: int: void
+removeproducts (quantity:int : void
+
+
+
+
+Exemplo: Enter Product data:
+
+Name 
+
+price 
+
+quantity in stock 
+
+product data: tv, $900.00, 10 units, total $ 9000.00
+
+enter the number of products to be added in stock : 5
+
+updated data: TV, $900.00, 15 units, total $13500.00
+
+enter the number of produts to be removed from stock 3 
+
+updated data: tv, $900.00, 12 units, total: $10800.00
+
