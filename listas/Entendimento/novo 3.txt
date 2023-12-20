@@ -1,0 +1,13 @@
+Em Java, uma lista é uma estrutura de dados que representa uma coleção ordenada de elementos. A interface java.util.List é uma das interfaces mais comuns para implementar listas em Java. Uma lista permite armazenar elementos em uma sequência específica e fornece métodos para acessar, adicionar, remover e manipular esses elementos. Duas implementações populares da interface List são ArrayList e LinkedList.
+
+Aqui estão algumas características principais das listas em Java:
+
+Ordenação: Os elementos em uma lista são armazenados em uma ordem específica, e você pode acessar esses elementos com base em sua posição na lista.
+
+Índices: Os elementos em uma lista são acessados por meio de índices. O índice 0 representa o primeiro elemento, o índice 1 representa o segundo elemento e assim por diante.
+
+Duplicatas: Listas podem conter elementos duplicados. Cada elemento é associado a uma posição única na lista, mas a mesma instância pode aparecer em posições diferentes.
+
+Interface List: A interface List define métodos como add, get, remove, indexOf, size, etc., que são comuns a todas as implementações de lista. Isso permite que você use diferentes implementações de lista de maneira intercambiável, dependendo dos requisitos do seu programa.
+
+Aqui está um exemplo básico de como criar e usar uma lista em Java usando ArrayList:

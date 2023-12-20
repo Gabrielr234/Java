@@ -19,7 +19,7 @@ public class hotel {
 		int n = sc.nextInt();
 
 		for (int i = 0; i < n; i++) {
-			System.out.println("rent" + (i +1)+ ":");
+			System.out.println("rent" + (i + 1) + ":");
 			System.out.print("name:");
 			sc.nextLine();
 			String name = sc.nextLine();
@@ -33,9 +33,9 @@ public class hotel {
 
 		System.out.println("busy rooms");
 		for (int i = 0; i < 10; i++) {
-			if (vect[i]!=null) {
-			System.out.println(i+":"+vect[i]);
-		}
+			if (vect[i] != null) {
+				System.out.println(i + ":" + vect[i]);
+			}
 
 		}
 	}

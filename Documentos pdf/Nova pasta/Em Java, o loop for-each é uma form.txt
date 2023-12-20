@@ -1,0 +1,25 @@
+Em Java, o loop for-each é uma forma mais simples e legível de iterar através de elementos em uma coleção (como arrays, listas ou conjuntos). Aqui está um exemplo resumido de como você pode usar o for-each:
+
+java
+Copy code
+public class ForEachExample {
+    public static void main(String[] args) {
+        // Exemplo com um array de strings
+        String[] nomes = {"Alice", "Bob", "Charlie"};
+
+        // Loop for-each para iterar através dos elementos do array
+        for (String nome : nomes) {
+            System.out.println(nome);
+        }
+    }
+}
+Neste exemplo, o for-each simplifica a iteração através dos elementos do array nomes. A variável nome recebe automaticamente cada elemento do array em cada iteração, tornando o código mais conciso.
+
+A sintaxe geral do for-each é:
+
+java
+Copy code
+for (Tipo elemento : colecao) {
+    // Código a ser executado para cada elemento
+}
+onde Tipo é o tipo de elemento na coleção, e colecao é a coleção que você está percorrendo. Isso é aplicável a arrays, listas, conjuntos e outras estruturas de dados que implementam a interface Iterable.

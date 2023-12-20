@@ -1,0 +1,65 @@
+. "Boxing" em Java refere-se ao processo de converter um tipo primitivo em seu equivalente objeto (classe wrapper) e vice-versa. Isso é necessário quando você está lidando com coleções, como Listas, que só podem armazenar objetos, não tipos primitivos.
+
+Por exemplo, considere o seguinte código:
+
+java
+Copy code
+public class BoxingExample {
+    public static void main(String[] args) {
+        // Boxing: Convertendo um tipo primitivo em um objeto
+        int primitiveInt = 42;
+        Integer boxedInt = Integer.valueOf(primitiveInt);
+
+        // Unboxing: Convertendo de volta para o tipo primitivo
+        int unboxedInt = boxedInt.intValue();
+
+        System.out.println("Original: " + primitiveInt);
+        System.out.println("Boxed: " + boxedInt);
+        System.out.println("Unboxed: " + unboxedInt);
+    }
+}
+Neste exemplo, boxedInt é uma instância da classe Integer que armazena o valor inteiro 42. O processo de converter um tipo primitivo em seu equivalente objeto é chamado de "boxing". A operação inversa, converter o objeto de volta para o tipo primitivo, é chamada de "unboxing".
+
+
+
+
+
+whappper classes 
+
+
+
+
+Em Java, as "wrapper classes" (ou classes de invólucro) são classes que fornecem um invólucro (wrapper) ao redor de tipos primitivos. Cada tipo primitivo tem uma classe de invólucro correspondente. Essas classes são úteis quando você precisa tratar tipos primitivos como objetos. As principais wrapper classes em Java são:
+
+Integer: Para o tipo primitivo int.
+Long: Para o tipo primitivo long.
+Short: Para o tipo primitivo short.
+Byte: Para o tipo primitivo byte.
+Float: Para o tipo primitivo float.
+Double: Para o tipo primitivo double.
+Character: Para o tipo primitivo char.
+Boolean: Para o tipo primitivo boolean.
+Essas classes de invólucro estão contidas no pacote java.lang. Elas são frequentemente usadas em situações em que objetos são necessários, como em coleções (por exemplo, Listas, Conjuntos), ou quando você está trabalhando com APIs que esperam objetos em vez de tipos primitivos.
+
+Aqui está um exemplo de como as classes de invólucro podem ser usadas:
+
+java
+Copy code
+public class WrapperExample {
+    public static void main(String[] args) {
+        // Exemplo de autoboxing (conversão de tipo primitivo para objeto)
+        Integer integerObject = 42; // Autoboxing acontece aqui
+
+        // Exemplo de unboxing (conversão de objeto para tipo primitivo)
+        int intValue = integerObject; // Unboxing acontece aqui
+
+        System.out.println("Integer Object: " + integerObject);
+        System.out.println("Unboxed Int Value: " + intValue);
+    }
+}
+Neste exemplo, a variável integerObject é uma instância da classe Integer, que é uma wrapper class para o tipo primitivo int. O Java realiza automaticamente a conversão entre o tipo primitivo e o objeto quando necessário (autoboxing e unboxing).
+
+
+
+
+
