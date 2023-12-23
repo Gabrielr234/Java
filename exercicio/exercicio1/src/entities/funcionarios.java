@@ -12,7 +12,7 @@ public class funcionarios {
 
 	}
 
-	public funcionarios(int id, String nome, double salario) {
+	public funcionarios(int id,String nome, double salario) {
 
 		this.id = id;
 		this.nome = nome;
@@ -45,5 +45,10 @@ public class funcionarios {
 
 	public void aumentarsalario(double percentual) {
 		salario += salario * percentual / 100;
+	}
+
+	@Override
+	public String toString() {
+		return id + ", " +nome+ ", "+ String.format(" %.2f", salario);
 	}
 }
