@@ -68,13 +68,13 @@ public class Funcionario {
 		int idsalary = sc.nextInt();
 		Integer pos = position(list, idsalary);
 
-		if (pos == null){
+		if (pos == null) {
 			System.out.println("Funcionario não existe");
 		} else {
 			System.out.println("entre com a porcentagem");
-			
+
 			double percent = sc.nextDouble();
-			
+
 			list.get(pos).aumentarsalario(percent);
 
 		}
@@ -85,7 +85,6 @@ public class Funcionario {
 			System.out.println(func);
 		}
 
-		
 		sc.close();
 
 	}
@@ -100,7 +99,7 @@ public class Funcionario {
 		return null;
 
 	}
-	
+
 	public static boolean hasId(List<funcionarios> list, int id) {
 		funcionarios emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		return emp != null;
