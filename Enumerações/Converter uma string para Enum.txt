@@ -1,0 +1,6 @@
+Converter uma string para Enum
+
+
+orderstatus os1 =orderstatus.delivered;
+
+orderstatus os2 = orderstatus.valueof (delivered);
