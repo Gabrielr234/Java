@@ -1,0 +1,18 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class ExemploFormatacaoDataHora {
+    public static void main(String[] args) {
+        // Obtenha a data e hora atuais
+        LocalDateTime agora = LocalDateTime.now();
+
+        // Defina um formato personalizado para data e hora
+        DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        // Formate a data e hora usando o formatador personalizado
+        String dataHoraFormatada = agora.format(formatador);
+
+        // Imprima a data e hora formatadas
+        System.out.println("Data e Hora Formatadas: " + dataHoraFormatada);
+    }
+}

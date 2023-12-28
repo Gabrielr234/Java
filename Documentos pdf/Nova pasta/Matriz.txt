@@ -1,0 +1,58 @@
+Matriz
+
+
+
+Para trabalhar com matrizes em Java, você pode declarar uma matriz multidimensional. Aqui está um exemplo simples de como criar e manipular uma matriz em Java:
+
+java
+Copy code
+import java.util.Scanner;
+
+public class MatrizExemplo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Informe as dimensões da matriz
+        System.out.print("Informe o número de linhas: ");
+        int linhas = sc.nextInt();
+
+        System.out.print("Informe o número de colunas: ");
+        int colunas = sc.nextInt();
+
+        // Declaração da matriz
+        int[][] matriz = new int[linhas][colunas];
+
+        // Preenchimento da matriz
+        System.out.println("Informe os elementos da matriz:");
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                System.out.print("Elemento [" + i + "][" + j + "]: ");
+                matriz[i][j] = sc.nextInt();
+            }
+        }
+
+        // Impressão da matriz
+        System.out.println("Matriz informada:");
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println(); // Muda para a próxima linha após cada linha da matriz
+        }
+
+        sc.close();
+    }
+}
+Este é um exemplo básico que:
+
+Pergunta ao usuário o número de linhas e colunas da matriz.
+Cria uma matriz com essas dimensões.
+Preenche a matriz com valores fornecidos pelo usuário.
+Imprime a matriz.
+Este é apenas um exemplo inicial. Dependendo dos requisitos do seu programa, você pode precisar realizar operações mais complexas nas matrizes.
+
+
+
+
+
